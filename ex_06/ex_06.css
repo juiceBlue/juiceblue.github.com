@@ -1,0 +1,139 @@
+.cont{
+	width:800px;
+	border:1px solid #000;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.cont img{
+	width:100px;
+	height:100px;
+	margin:10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.show{
+	width:600px;
+	height:500px;
+	position: absolute;
+	left:0; 
+	right:0; 
+	top:20px; 
+	margin:auto;
+	/*border:1px solid #000;*/
+	box-sizing: border-box;	
+}
+/*————————————————————————————————————*/
+.bar{
+	box-sizing: border-box;
+	width: 800px;
+	margin: auto;
+	margin-top:100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+	align-content: flex-start;
+}
+.bar div{
+	box-sizing: border-box;
+	width: 100px;
+	height: 50px;
+	border: 1px solid black;
+	border-bottom: none;
+	float: left;
+}
+.bar div:hover{
+	cursor: pointer;
+}
+
+.bigtri{
+	box-sizing: border-box;
+	width: 800px;
+	height: 500px;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 1px solid black;
+}
+.bigtri span{
+	font-size: 150px;
+	color: #ccc;
+}
+/*——————————————————————————————————————*/
+.box{
+	box-sizing: border-box;
+	border:1px solid #000;
+	width:800px;
+	height:500px;
+	margin:auto;
+	margin-top:80px;
+	background: transparent;
+}
+.box .smallbox{
+	box-sizing: border-box;
+	width:700px;
+	height:400px;
+	margin: auto;
+	margin-top: 50px;
+	background: transparent;
+	overflow: auto;
+
+}
+.box .btn{
+	width:80px;
+	height:30px;
+	margin-top: 10px;
+	margin-left: 700px;
+}
+.box .smallbox .item{
+	width:600px;
+	height:50px;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	border:1px solid #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-content:center;
+	flex-wrap: wrap;
+}
+
+.box .smallbox .item .num{
+	box-sizing: border-box;
+	width:50px;
+	height:50px;
+	border-right:1px solid #000;
+	background: #ccc;
+	display: flex;
+	align-content:center;
+	align-items: center;
+	justify-content: center;
+}
+.box .smallbox .item .del{
+	box-sizing: border-box;
+	width:100px;
+	height:50px;
+	border-left:1px solid #000;
+	background: #ccc;
+	display: flex;
+	align-content:center;
+	align-items: center;
+	justify-content: center;
+}
+.box .smallbox .item .del:hover{
+	cursor:pointer;
+	background: pink;
+}
