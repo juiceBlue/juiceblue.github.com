@@ -3,7 +3,7 @@ function clicktoshow(obj){
 		var path = $('.cont img').eq(obj).attr('src');
 		$('.cont').after("<img src='' alt='' class='show' >");
 		$('.show').attr('src',path);
-		$('.cont').css('filter','blur(7px)');
+		$('.cont').css('filter','blur(8px)');
 		$('.show').click(function(){
 			$('.show').fadeOut(function(){
 		    $('.show').remove();
@@ -16,7 +16,7 @@ function clicktoshow(obj){
 var piclist=document.querySelectorAll('.cont img');
 for(var i=0;i<piclist.length;i++)
 	$('.cont img').eq(i).on('click',clicktoshow(i));
-//————————————————————————————————————————————————————
+// ————————————————————————————————————————————————————
 function change(obj){
 	$('.bar div').eq(obj).click(function(){
 	  $('.bar div').css('background','transparent');	
