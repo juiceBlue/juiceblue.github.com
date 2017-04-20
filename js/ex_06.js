@@ -17,6 +17,8 @@ var piclist=document.querySelectorAll('.cont img');
 for(var i=0;i<piclist.length;i++)
 	$('.cont img').eq(i).on('click',clicktoshow(i));
 // ————————————————————————————————————————————————————
+
+
 function changeword(obj){
 	$('.bar div').eq(obj).click(function(){
 		$('.bar div').css('background','transparent');
