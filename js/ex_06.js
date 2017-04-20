@@ -1,15 +1,15 @@
 function clicktoshow(obj){
 	$('.cont img').eq(obj).click(function(){
 		var path = $('.cont img').eq(obj).attr('src');
-		$('.cont').after("<img src='' alt='' class='show' >");
-		$('.show').attr('src',path);
+		$('.cont').after("<div class='show'><img src='' alt='' class='pic' ></div>");
+		$('.pic').attr('src',path);
 		$('.cont').css('filter','blur(8px)');
 		$('.show').click(function(){
 			$('.show').fadeOut(function(){
-		    $('.show').remove();
-		    $('.cont').css('filter','blur(0px)');
-		})
-		$('.show').fadeOut(1000);
+			    $('.show').remove();
+			    $('.cont').css('filter','blur(0px)');
+			})
+			$('.show').fadeOut(2000);
 		})
 	})
 }		
@@ -17,17 +17,20 @@ var piclist=document.querySelectorAll('.cont img');
 for(var i=0;i<piclist.length;i++)
 	$('.cont img').eq(i).on('click',clicktoshow(i));
 // ————————————————————————————————————————————————————
-function change(obj){
+function changeword(obj){
 	$('.bar div').eq(obj).click(function(){
-	  $('.bar div').css('background','transparent');	
-	  $('.bar div').eq(obj).css('background','#ccc');
-	  $('.bigtri span').text(obj+1);
+		$('.bar div').css('background','transparent');
+		$('.bar div').eq(obj).css('background','#ccc');
+		$('.mes span').text(obj+1);
 	})
 }
+
 var barlist=document.querySelectorAll('.cont img');
 $('.bar div').eq(0).css('background','#ccc');
 for(var i=0;i<barlist.length;i++)
-    $('.bar div').eq(i).on('click',change(i));
+	$('.bar div').eq(i).on('click',changeword(i));
+
+
 
 // ————————————————————————————————————————————————————
 $('.box input').click(function(){
