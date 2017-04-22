@@ -1,9 +1,10 @@
 *{
 	box-sizing: border-box;
 }
+@color:#66FFCC;
 .cont{
 	width:800px;
-	border:1px solid black;
+	border:1px solid @color;
 	margin:auto;
 	display: flex;
 	align-items: center;
