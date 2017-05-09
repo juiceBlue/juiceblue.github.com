@@ -1,0 +1,19 @@
+#myMap{
+	width: 1000px;
+	float: left;
+}
+#result1{
+	width:320px;
+	height: 50%;
+	background: #eee;
+	border: 1px solid lightgray;
+	float: left;
+}
+#result2{
+	width:320px;
+	height: 50%;
+	background: #eee;
+	border: 1px solid lightgray;
+	border-top: none;
+	float: left;
+}
